@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard",
+    "love"
+  ],
+  "plugins": ["@typescript-eslint", "import", "node", "promise"],
+  "rules": {
+    "import/first": "error",
+    "node/exports-style": ["error", "module.exports"],
+    "promise/always-return": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "error"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  }
+}
