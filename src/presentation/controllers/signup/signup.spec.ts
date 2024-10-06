@@ -193,7 +193,7 @@ describe("SignUp Controller", () => {
     expect(httpResponse.body).toEqual(new ServerError());
   });
 
-  test("Should call EmailValidator with correct email", () => {
+  test("Should call AddAccount with correct values", () => {
     const { sut, addAccountStub } = makeSut();
 
     const addSpy = jest.spyOn(addAccountStub, "add");
