@@ -16,7 +16,7 @@ export default [
     },
   },
   {
-    files: ["**/*.{ts,tsx}"],
+    files: ["**/*.ts"],
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
     },
